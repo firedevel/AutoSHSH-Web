@@ -1,4 +1,11 @@
-var server="http://127.0.0.1:8000/"
+//if you are using yourself, remove this
+var server = localStorage.getItem('Server');
+if (server == null){
+    var server = prompt('请输入服务器')
+    if (server != null && server != ""){
+        localStorage.setItem('Server', server);
+    }
+}
 
 $("#add-btn").click(()=>{ 
    $("#add-btn").addClass("btn-loading");
