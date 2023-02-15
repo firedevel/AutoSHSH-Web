@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link type="text/css" rel="stylesheet" href="./css/main.css">
+        <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+    </head>
+    <body>
+        <header>
+            <h2>SHSH</h2>
+            <div class="header-right"><a href="" class="btn">管理</a><a href="" class="btn">联系站长</a><a href="./ques.html" class="btn">常见问题</a></div>
+        </header>
+        <div class="container" id="c-main">
+            <div class="card">
+                <h1>添加</h1>
+                <p>将您的iDevices添加到自动备份队列中</p>
+                <input id="add-model" placeholder="Model/型号">
+                <input id="add-board" placeholder="Board/主板">
+                <input id="add-ecid" placeholder="ECID">
+                <button class="btn btn-card" id="add-btn">提交</button>
+            </div>
+            <div class="card">
+                <h1>取回</h1>
+                <p>下载队列中您的设备shsh</p>
+                <input id="find-model" placeholder="Model/型号">
+                <input id="find-board" placeholder="Board/主板">
+                <input id="find-ecid" placeholder="ECID">
+                <button class="btn btn-card">查询</button>
+            </div>
+        </div>
+        <div class="container hide" id="c-view">
+            <div class="card">
+                <h1>取回</h1>
+                <p>
+                    下载队列中您的设备shsh<br>
+                    ECID: <a id="ecid"></a><br>
+                    Model: <a id="model"></a><br>
+                    Board: <a id="board"></a><br>
+                </p>
+                <table class="page-table">
+                    <thead>
+                      <tr>
+                        <th>版本</th>
+                        <th>时间</th>
+                        <th></th>
+                      </tr>
+                    </thead>
+                    <tbody id="view-tbody">
+                    </tbody>
+                  </table>
+            </div>
+        </div>
+        <footer>
+            <p><a>Github</a> | xxxxxx</p>
+        </footer>
+        <script src="./js/main.js"></script>
+    </body>
+</html>

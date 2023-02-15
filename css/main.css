@@ -1,0 +1,138 @@
+body{
+    background: linear-gradient(217deg, rgba(255, 127, 127, 0.8), rgba(255,0,0,0) 70.71%),
+            linear-gradient(127deg, rgba(105, 225, 145, 0.8), rgba(0,255,0,0) 70.71%),
+            linear-gradient(336deg, rgba(98, 168, 238, 0.8), rgba(0,0,255,0) 70.71%);
+    background-size: auto; 
+    background-position: center; 
+    background-attachment: fixed;
+    padding: 0;
+}
+header{
+    padding: 5px 10px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+}
+header h2{
+    display: inline-block;
+    margin: 0;
+}
+.header-right *{
+    float: right;
+    color: #262626;
+}
+.btn{
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: 0.2s;
+}
+.btn:hover{
+    background-color: #0000001b;
+}
+
+a{
+    text-decoration: none;
+}
+
+.card{
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 7px 1px #0000001a;
+    margin: 10px 0;
+}
+.card h1,h2{
+    margin: 0;
+}
+.card p{
+    margin: 3px 0;
+    color: #0000007c;
+}
+.card input{
+    display: block;
+    margin: 10px 0;
+    border: none;
+    background-color: #eeeeee;
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 5px;
+    width: calc(100% - 20px);
+}
+.btn-card{
+    border: none;
+    background: #c3edde;
+    width: 100%;
+}
+.btn-card:hover{
+    border: none;
+    background: #92d9c0;
+}
+.btn-loading{
+    border: none;
+    background: #d7d7d7;
+}
+.btn-loading:hover{
+    border: none;
+    background: #d7d7d7;
+}
+.container{
+    width: 500px;
+    position: relative;
+    left:50%;
+    transform: translateX(-50%);
+}
+.page-table{
+    width: 100%;
+    border-collapse: collapse;
+}
+.page-table th{
+    text-align: left;
+    font-weight: 500;
+}
+.page-table tbody tr{
+    border-radius: 10px;
+}
+.page-table td,th{
+    padding: 5px 10px;
+}
+
+.page-table tbody tr:nth-child(odd){
+    background-color: rgb(238, 238, 238);
+}
+.page-table tbody tr td:first-child{
+    border-radius: 5px 0 0 5px;
+}
+.page-table tbody tr td:last-child{
+    border-radius: 0 5px 5px 0;
+}
+svg{
+    margin-top: 5px;
+}
+.hide{
+    display: none;
+}
+a{
+    color: #0084dd;
+}
+.emoji{
+    font-size: 23px;
+    color: #000000 !important;
+    vertical-align: middle;
+}
+footer{
+    text-align: center;
+    color: #00000050;
+    font-weight: 400;
+}
+footer a{
+    color: #0000007a;
+    font-weight: 500;
+}
+@media screen and (max-width: 510px){
+    .container{
+        width: 100%;
+        position: relative;
+        left: auto;
+        transform: none;
+    }
+}
