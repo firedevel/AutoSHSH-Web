@@ -76,3 +76,8 @@ function renderView(res){
     });
 
 }
+
+$("#rm-server").click(()=>{
+    localStorage.removeItem('Server');
+    location.reload();
+})
